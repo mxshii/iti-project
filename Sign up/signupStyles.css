@@ -1,0 +1,140 @@
+:root {
+    --primary-color: #2B2E7F;
+    --secondary-color: #252A7B;
+    --white-color: #f9f9f9;
+    --gray-color: #969393;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--secondary-color);
+}
+
+.container {
+    background-color: var(--white-color);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.welcome-text {
+    color: var(--primary-color);
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0px;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.custom-font {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray-color);
+    text-align: center;
+
+}
+
+.text-style {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    color: var(--white-color);
+    text-align: center;
+}
+.brand-name {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: regular;
+    color: var(--white-color);
+    text-align: center;
+}
+.input_box {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    border-radius: 8px;
+    font-size: 16px;
+    color: #2B2E7F;
+}
+
+.input_box input {
+    width: 70%;
+    padding: 10px;
+    padding-right: 35px;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+}
+
+.input_box input::placeholder {
+    color: var(--primary-color);
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.input-icon {
+    right: 20px;
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+    margin-right: 10px;
+}
+.input-icon {
+    width: 30px;
+    height: 30px;
+    /* pointer-events: none; */
+   
+}
+.submit-btn {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 12px 120px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--secondary-color);
+}
+.nav_logo {
+    align-items: center;
+    text-decoration: none;
+    color: var(--white-color);
+    position: absolute;
+    text-decoration: underline;
+    left: 20px;
+    top: 20px;
+}
+
+.signin-link {
+    color: var(--white-color);
+    text-decoration: underline;
+    font-weight: 500;
+    margin-left: 5px;
+    text-align: center;
+}
+.login-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
