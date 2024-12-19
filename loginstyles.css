@@ -5,13 +5,21 @@ body{
 .box-container{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(auto-fit,2fr)
     justify-content: center;
     align-items: center;
     text-align: center;
     margin: 100px;
 }
-.box-container >h1, .box-container >p{
+.info-container{
     grid-column: 2/3;
-    grid-row: 1;
+    border: 2px none;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.info-container > img{
+    width: 20px;
+    height: auto;
 }
 
