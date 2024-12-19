@@ -5,6 +5,15 @@ body{
     background-color: #2b2e7f;
 }
 
+.back{
+    margin: 20px;
+}
+
+.back > a{
+    text-decoration: none;
+    color: white;
+}
+
 .logo{
     display: flex;
     justify-content: center;
@@ -40,6 +49,15 @@ body{
     background-color: white;
 }
 
+.info-container > h1{
+    color: #3a3f86;
+    margin-bottom: 10px;
+}
+.info-container >p{
+    font-weight: lighter;
+    margin-top: 0px;
+}
+
 .input-container {
     display: flex;
     align-items: center;
@@ -72,14 +90,19 @@ body{
     border: 2px none;
     border-radius: 10px;
     background-color: #2b2e7f;
-    margin: 20px 100px;
-    padding: 10px;
+    margin: 20px;
+    padding: 5px 150px;
     transition: .2s ease-in-out;
+    font-size: 20px;    
 
 }
 
 .btn:hover{
     background-color: #111235;
+}
+
+.btn:active{
+    background-color: #131420;
 }
 
 .last{
