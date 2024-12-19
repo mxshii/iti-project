@@ -5,7 +5,7 @@ body{
 .box-container{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: repeat(auto-fit,2fr)
+    grid-template-rows: repeat(auto-fit,2fr);
     justify-content: center;
     align-items: center;
     text-align: center;
