@@ -1,9 +1,17 @@
+@import url(https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap);
+
+*{
+    font-family: Merriweather, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 :root {
     --primary-color: #2B2E7F;
     --secondary-color: #252A7B;
     --white-color: #f9f9f9;
     --gray-color: #969393;
 }
+
+
 
 body {
     display: flex;
@@ -30,6 +38,10 @@ body {
     font-size: 36px;
     font-weight: 700;
     text-align: center;
+    /* omar added this */
+    margin-top: 0px; 
+    /* omar added this */
+
     margin-bottom: 0px;
     font-family: 'Arial', sans-serif;
     letter-spacing: 0.5px;
@@ -39,6 +51,9 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    /* Omar added this */
+    margin-top: 0;
+    /* Omar added this */
     color: var(--gray-color);
     text-align: center;
 
@@ -59,7 +74,16 @@ body {
     font-weight: regular;
     color: var(--white-color);
     text-align: center;
+
+    /* Omar added this */
+    transform: translateX(5%) translateY(10%);
 }
+/* Omar Added this */
+.brand-name > img{
+    transform: translateX(-350%) translateY(180%);
+}
+
+
 .input_box {
     position: relative;
     display: flex;
@@ -120,7 +144,7 @@ body {
     text-decoration: none;
     color: var(--white-color);
     position: absolute;
-    text-decoration: underline;
+    text-decoration: none   ;
     left: 20px;
     top: 20px;
 }
