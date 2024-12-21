@@ -1,0 +1,223 @@
+@import url(https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
+* {
+  font-family: 'Merriweather', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@font-face {
+  font-family: LAMEBRAINS;
+  src: url(LAMEBRAINS.ttf);
+}
+
+.container_header {
+  border: 2px none white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 'logo buttons account';
+  background-color: #2b2d7f;
+}
+
+.container_header>p {
+  grid-area: logo;
+  left: 50px;
+  position: relative;
+  color: white;
+}
+
+.container_header>img {
+  width: 30px;
+  grid-area: logo;
+  position: relative;
+  top: 10px;
+  left: 15px;
+}
+
+.navi {
+  grid-area: buttons;
+  text-align: center;
+  align-content: center;
+}
+
+.navi>a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+.navi>a:active {
+  color: #704EFC;
+}
+
+.account {
+  grid-area: account;
+  text-align: center;
+  align-content: center;
+}
+
+.account>a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  left: 25%;
+  border: 2px none;
+  background-color: black;
+  border-radius: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  transition: 0.3s;
+}
+
+.JuiceMerch {
+  grid-area: account;
+  text-align: center;
+  align-content: center;
+}
+
+.JuiceMerch>a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  right: 3.5rem;
+  border: 2px none;
+  background: linear-gradient(black, #6421b2, #6421b2);
+  background-size: 200% 200%;
+  border-radius: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-family: 'LAMEBRAINS';
+  font-size: 17px;
+  transition: all 0.3s ease-in-out;
+}
+
+.JuiceMerch>a:hover {
+  background-position: 0% 100%;
+  /* Move the gradient on hover */
+  background-size: 100% 100%;
+  /* Creates a more dynamic effect */
+  font-size: 20px;
+}
+
+
+.account>a:hover {
+  background-color: #0471ff;
+}
+
+.account>a:active {
+  background-color: #4f4477;
+}
+
+/*     END OF HEADER       */
+
+
+body {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-thickness: 4.5px;
+}
+
+.LLJW {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'img text';
+  border: 5px solid slateblue;
+  margin-left: 250px;
+  margin-right: 180px;
+  border-radius: 50px;
+  margin-top: 15px;
+  align-content: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+}
+
+.LLJW img {
+  grid-area: img;
+  width: 250px;
+  height: 250px;
+  margin-left: 30%;
+  margin-top: 1%;
+}
+
+.desc {
+  grid-area: text;
+  text-align: left;
+  padding-top: 20%;
+  padding-right: 4%;
+}
+
+.desc>section {
+  border: 1px solid black;
+  text-align: center;
+  margin-right: 20%;
+}
+
+.desc>section:hover {
+  background-color: #4f4477;
+}
+
+.desc>a {
+  grid-area: text;
+  text-align: right;
+  margin-left: 290px;
+  border: 3px groove slateblue;
+  border-radius: 20px;
+  padding: 1%;
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+}
+
+.desc>a:hover {
+  background-color: #4f4477;
+}
+
+.LLJW1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'img text';
+  border: 5px solid slateblue;
+  margin-left: 250px;
+  margin-right: 180px;
+  border-radius: 50px;
+  margin-top: 15px;
+  align-content: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+}
+
+.LLJW1 img {
+  grid-area: img;
+  width: 250px;
+  height: 250px;
+  margin-left: 30%;
+  margin-top: 1%;
+}
+
+.LLJW2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'img text';
+  border: 5px solid slateblue;
+  margin-left: 250px;
+  margin-right: 180px;
+  border-radius: 50px;
+  margin-top: 15px;
+  align-content: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+}
+
+.LLJW2 img {
+  grid-area: img;
+  width: 250px;
+  height: 250px;
+  margin-left: 30%;
+  margin-top: 1%;
+}
