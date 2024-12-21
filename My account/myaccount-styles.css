@@ -1,0 +1,186 @@
+@import url(https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
+
+:root {
+  --primary-color: #2B2E7F;
+  --secondary-color: #252A7B;
+  --white-color: #f9f9f9;
+  --gray-color: #969393;
+}
+
+@font-face {
+  font-family: 'LAMEBRAINS';
+  src: url('LAMEBRAINS.ttf');
+}
+
+/* Global Styling */
+body {
+  margin: 0;
+  font-family: Merriweather, 'Roboto', sans-serif;
+  background-color: #f0f4f8;
+}
+
+.container_header {
+  border: 2px none white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 'logo buttons account';
+  background-color: #2b2d7f;
+}
+
+.container_header>p {
+  grid-area: logo;
+  left: 50px;
+  position: relative;
+  color: white;
+}
+
+.container_header>img {
+  width: 30px;
+  grid-area: logo;
+  position: relative;
+  top: 10px;
+  left: 15px;
+}
+
+.navi {
+  grid-area: buttons;
+  text-align: center;
+  align-content: center;
+}
+
+.navi>a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+.navi>a:active {
+  color: #704EFC;
+}
+
+.account {
+  grid-area: account;
+  text-align: center;
+  align-content: center;
+}
+
+.account>a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  left: 25%;
+  font-size: 15px;
+  border: 2px none;
+  background-color: black;
+  border-radius: 50px;
+  padding: 10px 25px;
+  transition: 0.3s;
+}
+
+.JuiceMerch{
+  grid-area: account;
+  text-align: center;
+  align-content: center;
+}
+
+.JuiceMerch>a{
+  text-decoration: none;
+  color: white;
+  position: relative;
+  right: 25%;
+  border: 2px none;
+  background: linear-gradient(black, #6421b2,#6421b2);
+  background-size: 200% 200%;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-family: 'LAMEBRAINS';
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.JuiceMerch>a:hover{
+  background-position: 0% 100%; /* Move the gradient on hover */
+  background-size: 100% 100%; /* Creates a more dynamic effect */
+  font-size: 20px;
+}
+
+
+.account>a:hover {
+  background-color: #0471ff;
+}
+
+.account>a:active {
+  background-color: #4f4477;
+}
+
+/* Account Section */
+
+/* Main container for the account section */
+.container {
+  background-color: var(--primary-color); /* Sets the background color using the primary theme variable */
+  padding: 50px; /* Adds space inside the container */
+  border-radius: 25px; /* Rounds the corners of the container */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for a floating effect */
+  width: 90%; /* Makes the container take up 90% of its parent width */
+  max-width: 600px; /* Sets a maximum width to prevent it from stretching too wide */
+  margin: 50px auto; /* Centers the container and adds vertical spacing */
+  color: var(--white-color); /* Sets the text color to the defined white theme color */
+}
+
+/* Styles for the main heading in the account section */
+.welcome-text {
+  font-size: 36px; /* Large font size for emphasis */
+  font-weight: 700; /* Bold font weight for prominence */
+  text-align: center; /* Centers the text */
+  margin-bottom: 20px; /* Adds spacing below the heading */
+}
+
+/* Styles for optional subheadings or custom text */
+.custom-font {
+  font-size: 20px; /* Medium font size for subtext */
+  text-align: center; /* Centers the text */
+  margin-bottom: 40px; /* Adds spacing below */
+  color: var(--gray-color); /* Uses a subdued gray color for less emphasis */
+}
+
+/* Wrapper for input fields and labels */
+.input_box {
+  display: flex; /* Enables a flexible layout */
+  flex-direction: column; /* Aligns children vertically */
+  margin-bottom: 20px; /* Adds space below each input group */
+}
+
+/* Label for each input field */
+.input_box label {
+  font-size: 16px; /* Moderate font size for readability */
+  margin-bottom: 5px; /* Adds a small gap below the label */
+}
+
+/* Styling for the input values (here styled as a static span) */
+.input_box .test {
+  padding: 10px; /* Adds internal space inside the input field */
+  font-size: 16px; /* Sets the text size to a readable value */
+  border: 2px solid var(--white-color); /* Adds a white border for contrast */
+  border-radius: 8px; /* Rounds the corners for a polished look */
+  background-color: white; /* White background for input fields */
+  color: black; /* Black text for contrast against the white background */
+}
+
+/* General styling for buttons */
+.btn {
+  background-color: black; /* Sets the button background to black for strong contrast */
+  color: var(--white-color); /* White text color for visibility */
+  padding: 15px 50px; /* Adds generous padding to make buttons look larger */
+  border: none; /* Removes any default border */
+  border-radius: 8px; /* Smooth rounded corners */
+  cursor: pointer; /* Changes the cursor to a pointer to indicate a clickable button */
+  text-align: center; /* Centers the button text */
+  transition: background-color 0.3s ease; /* Adds a smooth transition effect on hover */
+  text-decoration: none; /* Removes underline if used with anchor elements */
+}
+
+/* Hover effect for buttons */
+.btn:hover {
+  background-color: #0471ff; /* Changes the background to a blue shade on hover */
+}
