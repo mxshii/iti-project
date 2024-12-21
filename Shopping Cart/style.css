@@ -109,7 +109,7 @@
 }
 
 .item {
-    display: inline-block;
+    display: flex;
     margin: 20px;
     text-align: center;
     color: white;
