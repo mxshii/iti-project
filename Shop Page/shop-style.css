@@ -1,0 +1,459 @@
+@import url(https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
+/*custom-font*/
+@font-face {
+    font-family: LAMEBRAINS;
+    src: url(LAMEBRAINS.ttf);
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body.loading{
+    animation: hidescrollBar 10s;
+}
+
+* {
+    font-family: 'Merriweather', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+body {
+    margin: 0;
+}
+
+/* loading screen */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(Untitled-1.png);
+    background-position: center;
+    background-attachment:fixed ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensures it's on top */
+    animation: slide-left 2s forwards 1s; /* Slide up after 1s delay */
+}
+
+/* Loading Text */
+.loading-text {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    font-family: "LAMEBRAINS";
+    font-size: 60px;
+}
+
+.loading-text>span{
+    font-family: "LAMEBRAINS";
+    font-size: 60px;
+}
+
+/* Slide-Up Animation */
+@keyframes slide-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Fade-In Animation */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hidescrollBar{
+    0%{
+        overflow: hidden;
+    }
+    100%{
+        overflow: auto;
+    }
+}
+
+/* All header related stuff goes here bro! */
+
+.container_header {
+    border: 2px none white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'logo buttons account';
+    background-color: #2b2d7f;
+}
+
+.container_header>p {
+    grid-area: logo;
+    left: 50px;
+    position: relative;
+    color: white;
+}
+
+.container_header>img {
+    width: 30px;
+    grid-area: logo;
+    position: relative;
+    top: 10px;
+    left: 15px;
+}
+
+.navi {
+    grid-area: buttons;
+    text-align: center;
+    align-content: center;
+}
+
+.navi>a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+.navi>a:active {
+    color: #704EFC;
+}
+
+.account {
+    grid-area: account;
+    text-align: center;
+    align-content: center;
+}
+
+.account>a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    left: 25%;
+    font-size: 15px;
+    border: 2px none;
+    background-color: black;
+    border-radius: 50px;
+    padding: 10px 25px;
+    transition: 0.3s;
+}
+
+.JuiceMerch{
+    grid-area: account;
+    text-align: center;
+    align-content: center;
+}
+
+.JuiceMerch>a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    right: 25%;
+    border: 2px none;
+    background: linear-gradient(black, #6421b2,#6421b2);
+    background-size: 200% 200%;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-family: 'LAMEBRAINS';
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.JuiceMerch>a:hover{
+    background-position: 0% 100%; /* Move the gradient on hover */
+    background-size: 100% 100%; /* Creates a more dynamic effect */
+    font-size: 20px;
+}
+
+
+.account>a:hover {
+    background-color: #0471ff;
+}
+
+.account>a:active {
+    background-color: #4f4477;
+}
+
+/* ---- end of header ----*/
+
+/* ---- center ----*/
+.hero {
+    background-color: #2b2d7f;
+}
+
+.center {
+    background-color: #714efb;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-areas: 'empty text juice';
+    align-items: center;
+    justify-items: center;
+}
+
+.center>img {
+    width: 300px;
+    height: auto;
+    grid-area: juice;
+}
+
+.text-container {
+    grid-column: 2/3;
+    grid-row: 1;
+    display: flex; /* Use Flexbox for vertical stacking */
+    flex-direction: column; /* Stack elements top to bottom */
+    align-items: center; /* Center-align text horizontally */
+}
+
+.text {
+    margin: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 188%;
+    color: white;
+}
+
+.text2 {
+    margin-top: 0;
+    font-size: 83%;
+    font-weight: lighter;
+    text-align: center;
+    color: white;
+}
+
+.text3 {
+    border: 1px none;
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 15px;
+    background-color: #2B2E7F;
+    font-size: 13px;
+    font-weight: lighter;
+    text-align: center;
+    color: white;
+    position: relative; /* to make glowing effect works */
+    z-index: 1;
+}
+
+/* Glowing Effect */
+.text3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #6421b2, #6421b2, #60a068, #c6bd98, #673676, #673676);
+    background-size: 500%;
+    z-index: -1;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    border-radius: 50px;
+    filter: blur(5px);
+}
+
+.text3:hover::before {
+    opacity: 1;
+    animation: glowingJuice 5s linear infinite;
+}
+
+@keyframes glowingJuice {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 300% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* ---- end of center ----*/
+
+/* ---- categories ----*/
+.categories{
+    display: grid;
+    grid-template-columns:2fr;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px ;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.types{
+    text-align: center;
+    padding: 10px;
+    border: 1px none black;
+    border-radius: 50px;
+    position: relative;
+    background-color: #5037b4; 
+}
+
+.types> a{
+    text-decoration: none;
+    padding: 7px;
+    color: white;
+}
+
+.types::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: 0;
+    bottom: 0;
+    width: calc(100%, 4px);
+    height: calc(100%, 4px);;
+    background: linear-gradient(45deg, #6421b2, #6421b2, #60a068, #c6bd98, #673676, #673676);
+    background-size: 500%;
+    z-index: -1;
+    transition: opacity .3s ease-in-out;
+    opacity: 0;
+    filter: blur(8px);
+
+}
+
+.types:hover::before {
+    opacity: 1;
+    animation: yo 10s linear infinite;
+}
+
+
+@keyframes yo{
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+}
+/* ---- end of categories ----*/
+
+.category {
+    margin-bottom: 2rem;
+    margin: 1rem;
+}
+
+.category h2 {
+    text-align: center;
+    color: #5037b4;
+    margin-bottom: 1rem;
+}
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+    gap: 1rem;
+
+
+}
+
+.center-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border: 2px solid #5037b4;
+    border-radius: 8px;
+    text-align: center;
+    transition: .3s;
+    box-shadow: 0px 0px 0px 0px black;
+
+}
+.product-card:hover{
+    background-color: #cbc1f1;
+    box-shadow: 0px 8px 8px 1px black;
+
+}
+
+.product-card img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 0.5rem;
+}
+.product-card h3 {
+    color: #673676;
+    font-size: 1.2rem;
+}
+
+.product-card p {
+    color: #223168;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+
+/* .foot{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: '1 bombaclat 3';
+    background-color: rgb(73, 73, 73);
+}
+
+.foot>p{
+    grid-area: bombaclat;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+} */
+
+
+/* Footer styling */
+.contact-footer {
+    padding: 2rem 0;
+    background: #252A7B;
+}
+
+/* Styling for footer heading */
+.contact-footer h3{
+    font-size: 1.3rem;
+    color: #F9F9F9;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.contact-footer p {
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+}
+
+/* Styling for social links section */
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+/* Styling for individual social link buttons */
+.social-links a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    color: #F9F9F9;
+    border: 2px solid #F9F9F9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.4rem;
+    transition: all 0.4s ease;
+}
+
+/* Hover effect for social links */
+.social-links a:hover {
+    color: #2b2e7f;
+    border-color: #2b2e7f;
+}

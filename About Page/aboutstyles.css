@@ -1,0 +1,354 @@
+/* Import the Merriweather font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+/* Reset margin, padding and box-sizing for all elements */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif; /* Apply Merriweather font */
+}
+/* Adding custom font 'LAMEBRAINS' */
+@font-face {
+   font-family: LAMEBRAINS;
+    src: url(LAMEBRAINS.ttf);
+}
+
+/* Header container: using grid layout to divide into logo, navigation, and account sections */
+.container_header {
+    border: 2px none white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'logo buttons account';
+    background-color: #2b2d7f;
+    padding: 10px;
+    align-items: center;
+    
+   
+}
+/* Logo positioning */
+.container_header>p {
+    grid-area: logo;
+    left: 50px;
+    position: relative;
+    color: white;
+}
+
+.container_header>img {
+    width: 30px;
+    grid-area: logo;
+    position: relative;
+    top: 0px;
+    left: 15px;
+}
+/* Navigation buttons section */
+.navi {
+    grid-area: buttons;
+    text-align: center;
+    align-content: center;
+    
+}
+/* Styling for navigation link */
+.navi>a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    
+}
+/* Active state styling for navigation links */
+.navi>a:active {
+    color: #704EFC;
+}
+/* Styles for the account section */
+.account {
+    grid-area: account;
+    text-align: center;
+    align-content: center;
+}
+/* Account button style */
+.account>a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    left: 25%;
+    border: 2px none;
+    background-color: black;
+    border-radius: 50px;
+    padding: 10px 25px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+/* JuiceMerch button styling with gradient and custom font */
+.JuiceMerch{
+    grid-area: account;
+    text-align: center;
+    align-content: center;
+}
+
+.JuiceMerch>a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    right: 25%;
+    border: 2px none;
+    background: linear-gradient(black, #6421b2,#6421b2);
+    background-size: 200% 200%;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-family: 'LAMEBRAINS';
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+}
+/* Hover effect for JuiceMerch button */
+.JuiceMerch>a:hover{
+    background-position: 0% 100%; /* Move the gradient on hover */
+    background-size: 100% 100%; /* Creates a more dynamic effect */
+    font-size: 20px;
+}
+
+/* Hover effect for account button */
+.account>a:hover {
+    background-color: #0471ff;
+}
+/* Active state for account button */
+.account>a:active {
+    background-color: #4f4477;
+}
+/* Responsive styling for the header on small screens */
+@media screen and (max-width: 768px) {
+    .container_header {
+     width: 100%; 
+      display: block; 
+      margin: auto;
+     
+    } 
+    .navi{
+        text-align: center;/* Center align the navigation */
+        display: block; /* Change display to block */
+        margin: auto;/* Center the navigation */
+        
+    }
+      .JuiceMerch{
+       margin-top: -20px; /* Adjust top margin */
+        display: block;/* Change display to block */
+        width: 100%;/* Set width to 100% */
+      }
+      .account {
+        margin: auto; /* Center align the account section */
+        display: block;
+        width: 100%;
+        height: auto;/* Set height to auto */
+        padding-top: 15px;/* Add padding to the top */
+    } 
+}
+/* Main section container styling */
+.section{
+    width: 100%;
+}
+/* Centered container with padding inside the main section */
+.section .container{
+    width: 80%;
+    display: block;
+    margin: 0px auto; 
+    padding: 50px 0px;
+}
+/* Styling for section title */
+.container .title{
+    width: 100%;
+    text-align: center;/* Center align the title */
+    margin-bottom: 50px;/* Add margin at the bottom */
+}
+/* Main heading (H1) styling */
+.container .title h1{
+    text-transform: inherit;/* Inherit text transformation */
+    font-size: 35px;/* Set font size */
+    color: #704EFC;
+
+}
+/* Decorative line under the main heading */
+.container .title h1::after{
+    content:"";
+    height: 5px; /* Set height */
+    width: 100px;/* Set width */
+    background-color: #704EFC;
+    border-radius: 25px; /* Round the corners */
+    display: block;/* Make it a block element */
+    margin: auto;/* Center the underline */
+}
+/* Content section styling */
+.content{
+    float: left; /* Float content to the left */
+    width: 55%;/* Set content width to 55% */
+}
+
+/* Image section styling */
+.image-section{
+   float: left;
+    width: 40%;
+
+   
+}
+/* Styling for images inside the image section */
+.image-section img{
+    width: 100%;
+    height:auto;
+
+    
+}
+  /* Styling for article headings */  
+.content .artical h2{
+    color: #5165e7;
+    font-size: 20px;
+    text-align: left;/* Align text to the left */
+    margin-top: -20px;/* Adjust top margin */
+    padding-bottom: 20px;
+}
+.content .articalb h4{
+    color: #5165e7;
+    margin: 20px; /* Add margin around the heading */
+    padding-top: 10px;/* Add top padding*/
+}
+/* Styling for article paragraphs */
+.content .articalb p{
+    color: #252A7B;
+    margin-bottom: 10px;
+}
+.content .articalc{
+    color: #5165e7;
+    padding-top: 20px;
+}
+.content .artical p{
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    color:#252A7B;
+}
+/* Button container styling */
+.button{
+    margin-top: 15px;
+}
+ /* Primary button styling */
+ .button a{
+        text-decoration: none;
+        padding: 6px 20px;
+        background-color: #704EFC;
+        border-radius: 40PX;
+        color: #F9F9F9;
+        font-size: 18PX;
+        letter-spacing: 1.5px;
+    }
+    /* Hover effect for buttons */
+    .button a:hover{
+        color: white;
+        background-color: #252A7B;
+        transition: 1s ease;
+    }
+    /* Social media icons container styling */
+    .container .social{
+        width: 100%;
+        clear: both;
+        margin-top: 50px;
+        padding: 8px 25px;
+        text-align: center;
+       
+    }
+    /* Styling for individual social media icons */
+    .container .social i{
+        color:#F9F9F9 ;
+        font-size: 22PX;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        line-height: 45px;
+        text-align: center;
+        background-color: #704EFC;
+        margin: 0px 5px;
+    }
+    /* Hover effect for social media icons */
+    .container .social i:hover{
+        color: white;
+        background-color: #252A7B;
+        transition: 1s ease;
+        transform:rotate(360deg)
+    
+    }
+    /* Responsive adjustments for the main section on small screens */
+    @media screen and (max-width: 768px){
+        .section .container{
+            width: 88%;
+            display: block;
+            margin: auto;
+        }
+        .content{
+            float: none;
+            width: 100%;
+            display: block;
+            margin: auto;
+        }
+        .image-section{
+            float: none;
+            width: 100%;
+            margin-top: 50px;
+        }
+        .image-section img{
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+        .container .title h1{
+            text-align: center;
+            font-size: 30px;
+        }
+        .button{
+            text-align: center;
+        }
+        .button a{
+            padding: 6px 15px;
+            font-size: 16px;
+        }
+        .container .social i{
+            font-size: 19px;
+            height: 35px;
+            width: 35px;
+            line-height: 35px;
+        }
+        
+    }
+
+
+      
+    
+        
+        
+       
+        
+        
+
+    
+        
+    
+
+   
+    
+
+
+    
+
+
+    
+
+    
+
+
+
+
+
+    
+
+
+
+
+
+
+

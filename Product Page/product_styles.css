@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+* {
+  font-family: 'Merriweather', serif;
+  /* Apply Merriweather font */
+}
+
+body {
+  background: image color(rgb(124, 93, 174));
+}
+
+
+/*Sets the page background with an image or color using the rgb() color format*/
+
+@font-face {
+  font-family: LAMEBRAINS;
+  src: url(LAMEBRAINS.ttf);
+}
+
+/*Defines a custom font (LAMEBRAINS) by loading it from an external file*/
+
+.container_header {
+  border: 2px none white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 'logo buttons account';
+  background-color: #2b2d7f;
+  padding: 10px;
+}
+
+/*Creates a grid layout for the header with three areas: logo, buttons, and account.
+ Also, sets the background color.*/
+.container_header>p {
+  grid-area: logo;
+  left: 50px;
+  left: 50px;
+  top: 3px;
+  position: relative;
+  color: white;
+}
+
+/*Styles the logo text with white color and relative positioning*/
+.container_header>img {
+  width: 30px;
+  grid-area: logo;
+  position: relative;
+  top: 0px;
+  left: 15px;
+}
+
+/*Defines the logo image's size and position*/
+.navi {
+  grid-area: buttons;
+  text-align: center;
+  align-content: center;
+}
+
+/*Positions the navigation buttons in the center of the grid*/
+.navi>a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+.navi>a:active {
+  color: #704EFC;
+}
+
+/*Removes text decoration, sets the text color to white,
+ and adds padding. The active link changes */
+.account {
+  grid-area: account;
+  text-align: center;
+  align-content: center;
+}
+
+/*locate and aligi the element*/
+.account>a {
+  text-decoration: none;
+  /*Removes the underline effect from the link text.*/
+  color: white;
+  position: relative;
+  /*Allows positioning relative to the element's normal position.
+    */
+  left: 25%;
+  /*Moves the element 25% to the right relative to its position.*/
+  border: 2px none;
+  /*2px none: Sets a border with a 2-pixel width but no style, so it’s invisible.
+    */
+  background-color: black;
+  border-radius: 50px;
+  /*50px: Rounds the corners of the element with a radius of 50 pixels.*/
+  padding: 10px 25px;
+  /*Adds internal spacing: 7px on top/bottom and 20px on the left/right.*/
+  transition: 0.3s;
+  /*Makes any changes (like hover effects) occur smoothly over 0.3 seconds*/
+  font-size: 15px;
+}
+
+.JuiceMerch {
+  grid-area: account;
+  text-align: center;
+  align-content: center;
+}
+
+/*used to coordionate the location of the element*/
+.JuiceMerch>a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  right: 25%;
+  border: 2px none;
+  background: linear-gradient(black, #6421b2, #6421b2);
+  background-size: 200% 200%;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-family: 'LAMEBRAINS';
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+/*taxt properties*/
+.JuiceMerch>a:hover {
+  background-position: 0% 100%;
+  /* Move the gradient on hover */
+  background-size: 100% 100%;
+  /* Creates a more dynamic effect */
+  font-size: 18px;
+}
+
+
+.account>a:hover {
+  background-color: #0471ff;
+}
+
+.account>a:active {
+  background-color: #4f4477;
+}
+
+
+/* Reset */
+body,
+h1,
+p,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+
+}
+
+.product-container {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image>img {
+  width: 300px;
+  height: auto;
+}
+
+
+
+.product-details {
+  padding: 20px;
+  flex: 1;
+}
+
+.product-details .text{
+  justify-content:center ;
+}
+
+.product-details .text >h2 {
+  margin: 0;
+  color: #333;
+}
+
+
+ul {
+  padding: 0;
+  margin-bottom:10px;
+  margin-top:0 ;
+  color: rgba(250, 230, 8, 0.945);
+}
+
+.product-details .labels {
+  margin-bottom: 10px;
+
+}
+
+select,
+input {
+  padding: 2px;
+  font-size: 16px;
+}
+
+
+.price {
+  font-size: 20px;
+  color: #e63946;
+}
+
+
+.product-details .description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+
+/* .actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+} */
+
+.add-to-cart {
+  background-color: #0a0c7e;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  transition: .2s ease-in-out;
+  margin-top: 0px;
+}
+
+.add-to-cart >a{
+  text-decoration: none;
+  color: white;
+}
+
+.add-to-cart:hover {
+  background-color: #070844;
+}
+
+.add-to-cart:active {
+  background-color: rgb(59, 59, 59);
+}
+
+
+/* .buy-now {
+  background-color: #e63946;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.9;
+} */

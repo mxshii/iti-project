@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- Declares the document as HTML5. -->
+<html lang="en">
+<!-- Specifies that the language of the document is English.
+ -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Defines the character encoding as UTF-8 to support special characters. -->
+    <link rel="stylesheet" href="product_styles.css">
+    <!-- Links an external CSS file for styling the page. -->
+    <title>Shma3a Store</title>
+    <!-- Sets the title of the webpage shown in the browser tab -->
+
+</head>
+
+
+<body>
+    <!--header bar-->
+    <header>
+        <div class="container_header">
+            <img src="logo.png">
+            <p>Shma3a Store</p>
+            <nav class="navi">
+                <a href="/Home Page/Home.html">Home</a>
+                <a href="/Shop Page/shop.html">Shop</a>
+                <a href="/About Page/about.html">About</a>
+                <a href="/Contact Us/Contact.html">Contact</a>
+            </nav>
+            <nav class="account">
+                <a href="#">Sign up/Login</a>
+            </nav>
+            <nav class="JuiceMerch">
+                <a href="/Shop Page/shop.html">JUICE MERCH #</a>
+            </nav>
+        </div>
+    </header>
+    <br>
+
+
+
+    <br>
+    <div class="product-container">
+        <!-- Acontainer for the product details -->
+        <div class="product-image">
+            <img src="/Shop Page/OPENMINDTEE.png" alt="" />
+        </div>
+
+        <div class="product-details">
+            <div class="text">
+                
+                <h2>Open Mind Tee</h2>
+                <p class="price">$26.80</p>
+                <ul>
+                    <i class="fa fa-star checked"></i>
+                    <i class="fa fa-star checked"></i>
+                    <i class="fa fa-star checked"></i>
+                    <i class="fa fa-star checked"></i>
+                    <i class="fa fa-star checked"></i>
+                </ul>
+            </div>
+            <P class="description">
+                Show your love for Juice WRLD with this unique graphic tee featuring bold hand-drawn artwork and the iconic "999" logo. Made from 100% soft cotton, it offers comfort and style, perfect for everyday wear.
+            </P>
+            <!-- provides a brief description -->
+             
+            <label for="size"><strong>Available Sizes:</strong></label>
+            <select class="labels" name="size" select>
+                <option value="S">Small</option>
+                <option value="M">Medium</option>
+                <option value="L">Large</option>
+                <option value="XL">XL</option>
+            </select>
+            <br>
+            <label for="Quantity"><strong>Quantity:</strong></label>
+            <input class="labels" type="number" name="Quantity" min="1" max="10" value="1" style="width: 50px;">
+            <br>
+            
+            <button class="add-to-cart">
+                <a href="#">Add to cart</a>
+            </button>
+
+            
+
+        </div>
+    </div>
+</body>
+
+</html>

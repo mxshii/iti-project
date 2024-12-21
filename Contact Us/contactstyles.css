@@ -1,0 +1,389 @@
+/* Importing the Merriweather font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+/* Universal styles for all elements */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather', serif;/* Apply Merriweather font */
+    ;
+}
+
+/* General styling for the body element */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+
+/* Contact section background styles */
+.contact-bg {
+    height: 40vh;
+    background-color: #704EFC;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    color: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the subheading in the contact section */
+.contactP-bg h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+/* Styling for the main heading in the contact section */
+.contact-bg h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    letter-spacing: 4px;
+}
+
+/* Styling for the line divider in the contact section */
+.line div {
+    margin: 0 0.2rem;
+}
+
+.line div:nth-child(1), .line div:nth-child(3) {
+    height: 3px;
+    width: 70px;
+    background: #F9F9F9;
+    border-radius: 5px;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+}
+
+.line div:nth-child(2) {
+    width: 10px;
+    height: 10px;
+    background: #2b2e7f;
+    border-radius: 50%;
+}
+
+/* General text styling */
+text {
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+.contact-bg .text {
+    margin: 1.6rem 0;
+}
+
+/* Styling for the contact information section */
+.contact-body {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Styling for each contact info block */
+.contact-info {
+    margin: 2rem 0;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.contact-info span {
+    display: block;
+}
+
+.contact-info div {
+    margin: 0.8rem 0;
+    padding: 1rem;
+}
+
+.contact-info span .fas {
+    font-size: 2rem;
+    padding-bottom: 0.9rem;
+    color: #2b2e7f;
+}
+
+/* Styling for the contact info text */
+.contact-info div span:nth-child(2) {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.contact-info .text {
+    padding-top: 0.4rem;
+}
+
+/* Styling for the contact form section */
+.contact-form {
+    padding: 2rem 0;
+    border-top: 1px solid #F9F9F9;
+}
+
+.contact-form {
+    padding-bottom: 1rem;
+}
+
+/* Styling for the input fields */
+.form-control {
+    width: 100%;
+    border: 1.5px solid #F9F9F9;
+    border-radius: 5px;
+    padding: 0.7rem;
+    margin: 0.6rem 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    outline: 0;
+}
+
+/* Styling for focused form input */
+.form-contact:focus {
+    box-shadow: 0 0 6px -3px rgba(48,48,48,1);
+}
+
+/* Styling for form layout */
+.contact-form form div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.6rem;
+}
+
+/* Styling for the send button */
+.send-btn {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #F9F9F9;
+    background: #252A7B;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+/* Hover effect for the send button */
+.send-btn:hover {
+    opacity: 0.8;
+}
+
+/* Styling for the contact form image */
+.contact-form > div img {
+    width: 85%;
+}
+
+/* Centering the contact form */
+.contact-form > div {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Footer styling */
+.contact-footer {
+    padding: 2rem 0;
+    background: #252A7B;
+}
+
+/* Styling for footer heading */
+.contact-footer h3 {
+    font-size: 1.3rem;
+    color: #F9F9F9;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.contact-footer p {
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 1rem;
+}
+
+/* Styling for social links section */
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+/* Styling for individual social link buttons */
+.social-links a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    color: #F9F9F9;
+    border: 2px solid #F9F9F9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.4rem;
+    transition: all 0.4s ease;
+}
+
+/* Hover effect for social links */
+.social-links a:hover {
+    color: #2b2e7f;
+    border-color: #2b2e7f;
+}
+
+/* Responsive design for medium screens (tablets and small laptops) */
+@media screen and (min-width: 768px) {
+    .contact-bg .text {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive design for larger screens */
+@media screen and (min-width: 992px) {
+    .contact-bg .text {
+        width: 50%;
+    }
+
+    .contact-form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
+
+/* Responsive design for very large screens (desktops) */
+@media screen and (min-width: 1200px) {
+    .contact-info {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Custom font face for LAMEBRAINS font */
+@font-face {
+    font-family: LAMEBRAINS;
+    src: url(LAMEBRAINS.ttf);
+}
+/* Header container styling */
+.container_header {
+    border: 2px none white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'logo buttons account';
+    background-color: #2b2d7f;
+    padding: 10px;
+}
+
+.container_header>p {
+    grid-area: logo;
+    left: 50px;
+    top: 3px;
+    position: relative;
+    color: white;
+}
+
+.container_header>img {
+    width: 30px;
+    grid-area: logo;
+    position: relative;
+    top: 0px;
+    left: 15px;
+}
+
+.navi {
+    grid-area: buttons;
+    text-align: center;
+    align-content: center;
+}
+
+.navi>a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+.navi>a:active {
+    color: #704EFC;
+}
+
+.account {
+    grid-area: account;
+    text-align: center;
+    align-content: center;
+}
+
+.account>a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    left: 25%;
+    font-size: 15px;
+    border: 2px none;
+    background-color: black;
+    border-radius: 50px;
+    padding: 10px 25px;
+    transition: 0.3s;
+}
+
+.JuiceMerch{
+    grid-area: account;
+    text-align: center;
+    align-content: center;
+}
+
+.JuiceMerch>a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    right: 25%;
+    border: 2px none;
+    background: linear-gradient(black, #6421b2,#6421b2);
+    background-size: 200% 200%;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-family: 'LAMEBRAINS';
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.JuiceMerch>a:hover{
+    background-position: 0% 100%; /* Move the gradient on hover */
+    background-size: 100% 100%; /* Creates a more dynamic effect */
+    font-size: 20px;
+}
+
+
+.account>a:hover {
+    background-color: #0471ff;
+}
+
+.account>a:active {
+    background-color: #4f4477;
+}
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    /* Make header stack vertically */
+    .container_header {
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-areas:
+            "logo"
+            "buttons"
+            "account";
+        text-align: center; /* Center-align text */
+    }
+
+    /* Stack navigation items vertically */
+    .navi {
+        flex-direction: column; /* Change from row to column */
+        gap: 5px; /* Add spacing between links */
+    }
+
+    /* Center account button */
+    .account {
+        text-align: center;
+    }
+}
