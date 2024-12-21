@@ -50,12 +50,13 @@ body{
 }
 
 .info-container > h1{
-    color: #3a3f86;
+    color: #2B2E7F;
     margin-bottom: 10px;
 }
 .info-container >p{
     font-weight: lighter;
     margin-top: 0px;
+    color: #969393;
 }
 
 .input-container {
