@@ -22,7 +22,7 @@ body {
 
     justify-content: center;
     min-height: 100vh;
-    background-color: var(--secondary-color);
+    background-color: var(--third-color);
 }
 
 .container {
