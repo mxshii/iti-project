@@ -28,7 +28,7 @@ Version Control: Git & GitHub for managing the project.
 
 Clone the Repository:
 
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https://github.com/mxshii/iti-project
 
 Navigate to the Project Directory:
 
