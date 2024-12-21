@@ -103,6 +103,7 @@
     margin: 50px auto;
     max-width: 600px;
     background: rgba(103, 12, 116, 0.644);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.5);
     padding: 29px;
     border-radius: 10px;
 }
@@ -111,6 +112,7 @@
     display: inline-block;
     margin: 20px;
     text-align: center;
+    color: white;
 }
 
 .item img {
@@ -141,4 +143,5 @@ body {
 }
 .items {
   text-align: center;
+  color: rgb(255, 255, 255)
 }
