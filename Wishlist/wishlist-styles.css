@@ -152,10 +152,10 @@ h1 {
   text-align: right;
   border: 3px groove slateblue;
   border-radius: 20px;
-  padding: 1%;
+  padding: 10px;
   text-decoration: none;
   color: black;
-  transition: 0.5s;
+  transition: 0.3s ease-in-out;
 }
 
 .desc>a:hover {
