@@ -32,13 +32,13 @@ git clone https://github.com/mxshii/iti-project
 
 Navigate to the Project Directory:
 
-cd your-repo-name
+cd iti-project
 
-Open index.html in Your Browser:
+Open home.html in Your Browser:
 
-open index.html
+open home.html
 
-or just double-click the index.html file.
+or just double-click the home.html file.
 
 
 📌 Purpose of the Project
