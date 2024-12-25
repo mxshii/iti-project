@@ -195,9 +195,9 @@ body {
 .text-container {
     grid-column: 2/3;
     grid-row: 1;
-    display: flex; /* Use Flexbox for vertical stacking */
-    flex-direction: column; /* Stack elements top to bottom */
-    align-items: center; /* Center-align text horizontally */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
 }
 
 .text {
