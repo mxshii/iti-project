@@ -299,8 +299,8 @@ body {
     left: -2px;
     right: 0;
     bottom: 0;
-    width: calc(100%, 4px);
-    height: calc(100%, 4px);;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);;
     background: linear-gradient(45deg, #6421b2, #6421b2, #60a068, #c6bd98, #673676, #673676);
     background-size: 500%;
     z-index: -1;
