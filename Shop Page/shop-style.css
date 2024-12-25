@@ -160,7 +160,6 @@ body {
 }
 
 .JuiceMerch>a:hover{
-    background-position: 0% 100%;
     background-size: 100% 100%;
     font-size: 20px;
 }
