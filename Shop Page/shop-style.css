@@ -156,12 +156,12 @@ body {
     padding: 10px 20px;
     font-family: 'LAMEBRAINS';
     font-size: 15px;
-    transition: all 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .JuiceMerch>a:hover{
-    background-position: 0% 100%; /* Move the gradient on hover */
-    background-size: 100% 100%; /* Creates a more dynamic effect */
+    background-position: 0% 100%;
+    background-size: 100% 100%;
     font-size: 20px;
 }
 
