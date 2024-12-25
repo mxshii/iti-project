@@ -204,18 +204,6 @@ html, body{
 }
 
 
-/* .footer{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    background-color: gray;
-}
-
-.footer>h3{
-    grid-column: 2/3;
-    color: white;
-} */
-
 /* Footer styling */
 .contact-footer {
     padding: 2rem 0;
