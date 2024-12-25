@@ -62,7 +62,7 @@ body{
     align-items: center;
     justify-content: center;
     margin: 15px 0;
-    gap: 10px; /* Add space between the icon and the input field */
+    gap: 10px; 
 }
 
 .Ico {
@@ -71,16 +71,16 @@ body{
 }
 
 .info {
-    width: 300px;          /* Fixed width for consistency */
-    padding: 10px;         /* Padding for better appearance */
-    border-radius: 8px;    /* Slightly rounded corners */
+    width: 300px;          
+    padding: 10px;         
+    border-radius: 8px;   
     border: 1px solid #2b2e7f;
     font-size: 14px;
-    outline: none;         /* Remove default focus outline */
+    outline: none;         
 }
 
 .info:focus {
-    border-color: #2b2e7f; /* Keep consistent border color on focus */
+    border-color: #2b2e7f; 
     box-shadow: 0 0 5px rgba(43, 46, 127, 0.5);
 }
 
