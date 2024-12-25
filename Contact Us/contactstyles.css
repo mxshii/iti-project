@@ -68,15 +68,7 @@ body {
     border-radius: 50%;
 }
 
-/* General text styling */
-text {
-    font-weight: 300;
-    opacity: 0.9;
-}
 
-.contact-bg .text {
-    margin: 1.6rem 0;
-}
 
 /* Styling for the contact information section */
 .contact-body {
