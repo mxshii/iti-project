@@ -1,10 +1,10 @@
 # College ITI Project - HTML & CSS Website
 
-# 📚 Project Overview
+# Project Overview
 
 This project is part of the coursework for my 3rd-year studies in the Management Information Systems (MIS) department at the Business College. The goal is to create a fully functional website using HTML and CSS that demonstrates core web development skills and effective design principles.
 
-# 💻 Project Features
+# Project Features
 
 Responsive Design: The website adapts to different screen sizes (desktop, tablet, mobile).
 
@@ -14,7 +14,7 @@ Clean and Modern UI: Focused on user-friendly design and simplicity.
 
 Basic Interactivity: Use of HTML and CSS for hover effects, buttons, and links.
 
-# 🛠️ Tools
+# Tools
 
 HTML5: For structuring the content.
 
@@ -24,7 +24,7 @@ Code Editor: Visual Studio Code
 
 Version Control: Git & GitHub for managing the project.
 
-# 🚀 How to Run the Project
+# How to Run the Project
 
 Clone the Repository:
 
@@ -41,7 +41,7 @@ open home.html
 or just double-click the home.html file.
 
 
-# 📌 Purpose of the Project
+# Purpose of the Project
 
 This project aims to reinforce the following skills:
 
@@ -51,11 +51,11 @@ Designing responsive and accessible layouts.
 
 Structuring a project and maintaining clean code.
 
-# 📄 License
+# License
 
 This project is licensed under the MIT License.
 
-# 📬 Contact Information
+# Contact Information
 
 If you have any questions or feedback, feel free to reach out:
 
